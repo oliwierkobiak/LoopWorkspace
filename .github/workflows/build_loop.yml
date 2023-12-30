@@ -41,7 +41,10 @@ jobs:
           now_line \
           algorithm_experiments \
           testflight_expiration_warning
-          
+
+
+          echo "Downloading code to support xdrip-client-swift"
+          git clone https://github.com/johandegraeve/xdrip-client-swift-1.git xdrip-client-swift
           echo "Downloading code to support GlucoseDirectClient"
           git clone https://github.com/creepymonster/GlucoseDirectClient.git GlucoseDirectClient
           # This patch configures LoopWorkspace to use the added CGM submodules
